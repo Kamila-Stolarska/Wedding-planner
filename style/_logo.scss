@@ -11,5 +11,39 @@
     transform: translate(-50%, -50%);
     font-family: $font-logo;
     font-size: 4rem;
+    text-shadow: 0px 2px $white;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+  .logo {
+    width: 125px;
+    height: 76px;
+
+    .logo-text {
+      font-size: 3rem;
+      text-shadow: 0$font-shadow;
+    }
   }
 }
