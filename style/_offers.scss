@@ -1,0 +1,261 @@
+.offers {
+  position: relative;
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  background-color: $pink;
+
+  .float-text {
+    font-family: $font-cursive;
+    font-size: 10rem;
+    color: $primary-color;
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    z-index: 1;
+    transform: rotate(-2deg);
+    color: $grey;
+    text-shadow: 1px 1px rgb(85, 84, 84);
+  }
+
+  h1 {
+    font-family: $font-secondary;
+    font-size: 3rem;
+    text-align: center;
+    padding: 100px 0;
+    color: $primary-color;
+    background-color: #fff;
+  }
+  .text {
+    width: auto;
+    height: 170px;
+    position: absolute;
+    bottom: 139px;
+    right: 153px;
+    transform: rotate(-2deg);
+    z-index: 1;
+    span {
+      display: inline-block;
+      height: 200px;
+      font-size: 230px;
+      font-family: $font-cursive;
+      color: $grey;
+      text-shadow: 1px 1px rgb(85, 84, 84);
+    }
+  }
+  .wrap {
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .hover-text {
+      font-family: $font-secondary;
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: transparent;
+      background-color: transparent;
+      text-align: center;
+      line-height: 500px;
+      transition: 0.2s linear background-color;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.459);
+        color: black;
+      }
+    }
+
+    .services {
+      flex-basis: 30%;
+      height: 500px;
+      background-image: url(../images/rings.jpg);
+      background-size: cover;
+      position: relative;
+
+      .button-one {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+      }
+      //   .first-text {
+      //     color: transparent;
+      //     background-color: transparent;
+      //   }
+    }
+    .portfolio {
+      flex-basis: 30%;
+      height: 500px;
+      background-image: url(../images/tree.jpg);
+      background-size: cover;
+      position: relative;
+      .button-two {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+      }
+    }
+    .advice {
+      flex-basis: 30%;
+      height: 500px;
+      background-image: url(../images/lady.jpg);
+      background-size: cover;
+      position: relative;
+      .button-three {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        transition: 0.3s linear;
+      }
+    }
+    .primary-button {
+      display: none;
+      width: 150px;
+      height: 50px;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      background-color: $grey;
+      color: #ffff;
+      text-shadow: 0 1px rgb(85, 84, 84);
+      transition: 0.3s linear;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(85, 84, 84);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .offers {
+    background-color: $pink;
+    .text {
+      bottom: 220px;
+      right: 74px;
+      height: 100px;
+      span {
+        height: 100px;
+      }
+    }
+    .wrap {
+      span {
+        font-size: 170px;
+      }
+
+      .primary-button {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .offers {
+    .float-text {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .container {
+    max-width: 540px;
+  }
+  .offers {
+    background-image: none;
+    background-color: $pink;
+    height: 1900px;
+    .float-text {
+      display: none;
+    }
+
+    .text {
+      display: none;
+    }
+    h1 {
+      font-size: 2.7rem;
+      padding: 100px 20px;
+    }
+
+    .wrap {
+      .primary-button {
+        display: block;
+      }
+      .services {
+        flex-basis: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-position: center -220px;
+      }
+      .portfolio {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        background-position: center -220px;
+      }
+      .advice {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        background-position: center -230px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+  .offers {
+    background-image: none;
+    height: 1900px;
+    background-color: $pink;
+    .float-text {
+      display: none;
+    }
+    h1 {
+      font-size: 2.7rem;
+      padding: 100px 20px;
+    }
+    .text {
+      display: none;
+    }
+    .wrap {
+      justify-content: space-evenly;
+      align-items: center;
+
+      .primary-button {
+        display: block;
+      }
+      .services {
+        flex-basis: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-position: center -100px;
+      }
+      .portfolio {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        background-position: center -130px;
+      }
+      .advice {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        background-position: center -100px;
+      }
+    }
+  }
+}

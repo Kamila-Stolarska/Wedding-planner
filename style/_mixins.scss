@@ -1,0 +1,25 @@
+@mixin square {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 3px 3px white;
+  background-size: cover;
+}
+
+@mixin about-h2 {
+  width: auto;
+  height: 200px;
+  font-size: 60px;
+  font-family: $font-cursive;
+  text-shadow: $font-shadow-dark;
+  line-height: 200px;
+  color: darken($grey, 8%);
+  text-align: center;
+}
+
+@mixin about-p {
+  font-family: $font-secondary;
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 1px;
+}

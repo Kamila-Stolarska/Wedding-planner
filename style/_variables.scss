@@ -1,14 +1,17 @@
 //fonts
 $font-logo: "Dancing Script", cursive;
-$main-font: "Roboto", sans-serif;
+$font-main: "Roboto", sans-serif;
 $font-secondary: "Shippori Mincho B1", serif;
 $font-cursive: "Parisienne", cursive;
-$font-decoration: "Sacramento", cursive;
 
 //colors
 $primary-color: rgb(87, 106, 118);
+$grey: rgb(173, 173, 173);
 $secondary-color: rgb(58, 153, 209);
 $dark-font: #2c353b;
 $white: rgb(219, 219, 219);
+$pink: rgb(240, 224, 224);
 // font-shadow
 $font-shadow: 0px 1px $white;
+$font-shadow-dark: 0px 2px $dark-font;
+$font-shadow-grey: 0 1px rgb(85, 84, 84);

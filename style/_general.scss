@@ -8,7 +8,8 @@
   background-repeat: no-repeat;
 }
 html {
-  font-family: $main-font;
+  font-family: $font-main;
+  height: 500vh;
 }
 .container {
   max-width: 1140px;
