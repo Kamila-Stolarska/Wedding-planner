@@ -1,0 +1,185 @@
+.contact-picture {
+  background-image: url(../images/contact1.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 400px;
+    height: 400px;
+    box-shadow: $box-shadow;
+    background-color: rgba(218, 200, 183, 0.459);
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+  }
+  .contact-button {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translate(-50%) rotate(45deg);
+    width: 400px;
+    height: 400px;
+    box-shadow: $box-shadow;
+    background-color: transparent;
+    text-align: center;
+    z-index: 1;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(219, 208, 191, 0.459);
+    }
+    &:hover span {
+      color: black;
+      text-shadow: $font-shadow-grey;
+    }
+    span {
+      position: absolute;
+      font-size: 4rem;
+      top: 50%;
+      left: 50%;
+      line-height: 100px;
+      text-transform: uppercase;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      font-family: $font-secondary;
+      color: transparent;
+      text-shadow: none;
+      transition: all 0.2s linear;
+    }
+  }
+}
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/logo.png);
+  background-color: rgb(243, 233, 233);
+  background-size: cover;
+  background-position: center;
+  .contact-form-wrap {
+    margin: auto auto;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(250, 246, 246, 0.808);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .text-form {
+      flex-basis: 45%;
+      height: 90%;
+    }
+    .form {
+      flex-basis: 45%;
+      height: 90%;
+      //   background-color: rgb(243, 233, 233);
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .contact-picture {
+    &::after {
+      width: 450px;
+      height: 450px;
+    }
+    .contact-button {
+      width: 200px;
+      height: 80px;
+      top: 600px;
+      transform: translate(-50%) rotate(0deg);
+      background-color: rgba(218, 200, 183, 0.459);
+      span {
+        font-size: 3rem;
+        line-height: 80px;
+        transform: translate(-50%, -50%) rotate(0deg);
+        color: black;
+        text-shadow: $font-shadow-grey;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .contact-picture {
+    &::after {
+      width: 500px;
+      height: 500px;
+    }
+    .contact-button {
+      width: 200px;
+      height: 80px;
+      top: 500px;
+      transform: translate(-50%) rotate(0deg);
+      background-color: rgba(218, 200, 183, 0.459);
+
+      span {
+        font-size: 3rem;
+        line-height: 80px;
+        transform: translate(-50%, -50%) rotate(0deg);
+        color: black;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .contact-picture {
+    &::after {
+      width: 400px;
+      height: 400px;
+    }
+    .contact-button {
+      width: 200px;
+      height: 80px;
+      top: 500px;
+      transform: translate(-50%) rotate(0deg);
+      background-color: rgba(218, 200, 183, 0.459);
+
+      span {
+        font-size: 3rem;
+        line-height: 80px;
+        transform: translate(-50%, -50%) rotate(0deg);
+        color: black;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: none;
+    padding: 0 15px;
+  }
+  .contact-picture {
+    &::after {
+      width: 200px;
+      height: 200px;
+    }
+    .contact-button {
+      width: 200px;
+      height: 80px;
+      top: 300px;
+      transform: translate(-50%) rotate(0deg);
+      background-color: rgba(218, 200, 183, 0.459);
+      span {
+        font-size: 3rem;
+        line-height: 80px;
+        transform: translate(-50%, -50%) rotate(0deg);
+        color: black;
+      }
+    }
+  }
+}

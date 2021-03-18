@@ -19,12 +19,17 @@
 
   h1 {
     font-family: $font-secondary;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding: 100px 0;
-    color: $primary-color;
-    background-color: #fff;
+    color: darken($primary-color, 10%);
+
+    // background-color: #fff;
+    z-index: 1;
+    // background-image: url(../images/logo3.jpg);
+    background-size: cover;
   }
+
   .text {
     width: auto;
     height: 170px;
