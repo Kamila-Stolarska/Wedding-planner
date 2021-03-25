@@ -1,7 +1,5 @@
 @mixin square {
   position: absolute;
-  width: 400px;
-  height: 400px;
   box-shadow: 0 0 3px 3px white;
   background-size: cover;
 }
@@ -22,4 +20,16 @@
   font-size: 18px;
   text-align: justify;
   letter-spacing: 1px;
+}
+@mixin primary-button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background-color: $grey;
+  color: #ffff;
+  text-shadow: 0 1px rgb(85, 84, 84);
+  transition: 0.3s linear;
+  border: none;
+  cursor: pointer;
 }

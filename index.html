@@ -22,17 +22,26 @@
     <header>
       <nav>
         <ul class="container">
-          <li><a href="#">Packages</a></li>
+          <li class="li-main-menu"><a class="a-main-menu"href="#">Packages</a></li>
           <li class="logo-list">
             <div class="logo">
               <p class="logo-text">Will you?</p>
             </div>
           </li>
-          <li><a href="#">Contact us</a></li>
-          <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+          <li class="li-main-menu"><a class="a-main-menu contact-a"href="#" >Contact us</a></li>
+          <div class="mobile-menu-icon"><i class="fas fa-bars"></i></div>
+        </ul>
+      </nav>
+      <nav class="nav-mobile">
+        <ul class="ul-mobile container">
+          <div class="close-button"><i class="far fa-times-circle"></i></div>
+          <li class="li-mobile"><a class="a-mobile" href="#">Packages</a></li>
+          <li class="li-mobile" ><a class="a-mobile" href="#">Contact us</a></li>
+         <li class="li-mobile"><a class="a-mobile" href="#">Portfolio</a></li>
         </ul>
       </nav>
     </header>
+
     <section class="big-image">
       <div class="img"></div>
     </section>
@@ -97,11 +106,53 @@
     <section class="contact-picture">
       <div class="contact-button"><span>Contact</span></div>
     </section>
-    <section class="contact">
+    <section class="contact" >
       <div class="contact-form-wrap">
-        <div class="text-form"></div>
-        <div class="form"></div>
+        <div class="text-form">
+          <h4>Hello</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+            corporis facere dolorem ad. Accusantium deleniti eos debitis, autem
+            soluta nemo rerum inventore amet quam et doloribus possimus maiores
+            repudiandae distinctio Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora impedit sapiente voluptates dolorum sint enim unde sequi suscipit corrupti! Dolorum consequatur nam molestias qui sint vitae corrupti! Dicta, veritatis?
+          </p>
+        </div>
+        <div class="form">
+          <form action="">
+            <label for="name"> First name</label>
+            <input required type="text" />
+            <label required for="email"> Email</label>
+            <input type="text" />
+            <label for="location"> Location of event</label>
+            <input type="text" />
+            <label for="guests"> No. of guests</label>
+            <input type="number" />
+            <label for="date"> Date of event</label>
+            <input type="date" />
+            <label for="budget"> Budget</label>
+            <input type="number" />
+            <label for="details">Details</label>
+            <textarea name="details" id="" cols="30" rows="10"></textarea>
+            <button class="submit-button">Submit</button>
+          </form>
+        </div>
       </div>
     </section>
+    <section class="pop-up-alert">
+      <div class="close-popup">
+        <i class="close-popup-icon far fa-times-circle"></i>
+      </div>
+      <div class="container">
+        <div>
+          <h5>
+           Thank you! 
+          </h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam in, beatae incidunt esse atque voluptatem, neque et possimus sequi ducimus quidem? Error tempora autem aliquam numquam, sequi aut incidunt atque.</p>
+          <span>Our team</span>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>

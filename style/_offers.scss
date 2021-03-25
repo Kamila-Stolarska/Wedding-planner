@@ -120,16 +120,7 @@
     }
     .primary-button {
       display: none;
-      width: 150px;
-      height: 50px;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      background-color: $grey;
-      color: #ffff;
-      text-shadow: 0 1px rgb(85, 84, 84);
-      transition: 0.3s linear;
-      border: none;
-      cursor: pointer;
+      @include primary-button;
 
       &:hover {
         background-color: rgb(85, 84, 84);
