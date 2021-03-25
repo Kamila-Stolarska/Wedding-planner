@@ -42,6 +42,32 @@ const scrollToContact = (e) => {
 contactButton.addEventListener("click", scrollToContact);
 contactButtonHeader.addEventListener("click", scrollToContact);
 
+//mobile menu contact opens form
+const contactMobile = document.querySelector(".contact-mobile-a");
+
+contactMobile.addEventListener("click", function (e) {
+  console.log("ok");
+  e.preventDefault();
+  const style = getComputedStyle(contactForm);
+
+  if (style.display === "none") {
+    contactForm.style.display = "flex";
+  }
+
+  contactForm.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+
+  //close mobile menu
+
+  if (mobileNavigation.style.display === "block") {
+    mobileNavigation.style.display = "none";
+  } else {
+    mobileNavigation.style.display = "block";
+  }
+});
+
 //contact form, thank you popup
 const submitButtonContact = document.querySelector(".submit-button");
 const contactPopupInfo = document.querySelector(".pop-up-alert");

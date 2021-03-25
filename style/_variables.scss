@@ -9,10 +9,11 @@ $primary-color: rgb(87, 106, 118);
 $grey: rgb(173, 173, 173);
 $secondary-color: rgb(58, 153, 209);
 $dark-font: #2c353b;
-$white: rgb(219, 219, 219);
+$white: rgb(150, 146, 146);
 $pink: rgb(240, 224, 224);
 // font-shadow
 $font-shadow: 0px 1px $white;
 $font-shadow-dark: 0px 2px $dark-font;
 $font-shadow-grey: 0 1px rgb(85, 84, 84);
-$box-shadow: 0 0 3px 3px white;
+$box-shadow: 0 0 3px 3px rgb(255, 254, 254);
+$box-shadow-beige: 0 0 3px 3px rgb(218, 207, 198);
