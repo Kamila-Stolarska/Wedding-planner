@@ -1,0 +1,43 @@
+footer {
+  width: 100vw;
+  height: 500px;
+  background-color: rgb(245, 231, 222);
+  h6 {
+    font-size: 4rem;
+    font-family: $font-cursive;
+    text-align: center;
+    padding: 30px;
+  }
+  .gallery {
+    overflow-x: scroll;
+    width: 80%;
+    height: 210px;
+    margin: 10px auto;
+    border: 2px solid white;
+
+    display: flex;
+    justify-content: center;
+    img {
+      margin: 15px 5px;
+      background-size: contain;
+    }
+  }
+  h5 {
+    font-size: 2rem;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    font-family: $font-secondary;
+  }
+  .icons {
+    text-align: center;
+    width: 100vw;
+    height: 50px;
+
+    .fab {
+      font-size: 2rem;
+      padding: 10px;
+      line-height: 50px;
+      cursor: pointer;
+    }
+  }
+}

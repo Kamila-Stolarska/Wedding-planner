@@ -18,7 +18,7 @@
   }
 
   h1 {
-    font-family: $font-secondary;
+    font-family: $font-cursive;
     font-size: 4rem;
     text-align: center;
     padding: 100px 0;
@@ -71,6 +71,16 @@
         background-color: rgba(255, 255, 255, 0.459);
         color: black;
       }
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        color: transparent;
+        &:hover {
+          color: black;
+        }
+      }
     }
 
     .services {
@@ -86,10 +96,6 @@
         left: 50%;
         transform: translate(-50%, -10%);
       }
-      //   .first-text {
-      //     color: transparent;
-      //     background-color: transparent;
-      //   }
     }
     .portfolio {
       flex-basis: 30%;
@@ -98,6 +104,8 @@
       background-size: cover;
       position: relative;
       .button-two {
+        text-align: center;
+        line-height: 50px;
         position: absolute;
         top: 10%;
         left: 50%;
@@ -144,6 +152,9 @@
       }
     }
     .wrap {
+      .hover-text {
+        display: none;
+      }
       span {
         font-size: 170px;
       }
@@ -155,18 +166,48 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 720px;
   }
   .offers {
+    background-image: none;
+    background-color: $pink;
+    height: 1900px;
     .float-text {
       display: none;
+    }
+    .text {
+      display: none;
+    }
+    .wrap {
+      .hover-text {
+        display: none;
+      }
+      .primary-button {
+        display: block;
+      }
+      .services {
+        flex-basis: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-position: center -370px;
+      }
+      .portfolio {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        background-position: center -550px;
+      }
+      .advice {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        background-position: center -300px;
+      }
     }
   }
 }
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .container {
     max-width: 540px;
   }
@@ -187,6 +228,9 @@
     }
 
     .wrap {
+      .hover-text {
+        display: none;
+      }
       .primary-button {
         display: block;
       }
@@ -232,7 +276,9 @@
     .wrap {
       justify-content: space-evenly;
       align-items: center;
-
+      .hover-text {
+        display: none;
+      }
       .primary-button {
         display: block;
       }

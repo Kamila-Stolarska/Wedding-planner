@@ -22,6 +22,7 @@
   letter-spacing: 1px;
 }
 @mixin primary-button {
+  font-family: $font-main;
   width: 150px;
   height: 50px;
   font-size: 1.8rem;

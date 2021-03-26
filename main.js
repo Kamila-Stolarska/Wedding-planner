@@ -5,7 +5,7 @@ const mobileNavigation = document.querySelector(".nav-mobile");
 const toggleHamburger = () => {
   const style = getComputedStyle(mobileNavigation);
   //   console.log("ok");
-  if (mobileNavigation.style.display === "none") {
+  if (style.display === "none") {
     mobileNavigation.style.display = "block";
   } else {
     mobileNavigation.style.display = "none";
@@ -38,6 +38,19 @@ const scrollToContact = (e) => {
     block: "start",
   });
 };
+
+//  scroll to about-us
+
+const aboutUsSection = document.querySelector("section.about-us");
+const aboutUsButton = document.querySelector(".about-us-button");
+
+aboutUsButton.addEventListener("click", function (e) {
+  e.preventDefault();
+  aboutUsSection.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+});
 
 contactButton.addEventListener("click", scrollToContact);
 contactButtonHeader.addEventListener("click", scrollToContact);
