@@ -25,7 +25,7 @@
 .about-us-picture {
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/img1.jpg);
+  background-image: url(../images/img1scaled.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -48,7 +48,7 @@
     @include square;
     width: 400px;
     height: 400px;
-    background-image: url(../images/about1.jpg);
+    background-image: url(../images/about1scaled.jpg);
     top: -40px;
     left: 5%;
     background-position: center -40px;
